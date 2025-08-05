@@ -1,7 +1,5 @@
 #include "Option.h"
-#include "Payoff.h"
 #include <iostream>
-#include <memory>
 
 // Option methods implementation
 Option::~Option(){}
@@ -14,6 +12,6 @@ double Option::get_maturity() const {
     return maturity;
 }
 
-std::shared_ptr<Payoff> Option::get_payoff() const {
+const std::shared_ptr<Payoff> Option::get_payoff() const {
     return payoff;
 }
