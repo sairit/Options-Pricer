@@ -17,4 +17,4 @@ class BinomialTreeEngine {
 
 };
 
-#endif // BinomialTreeEngine
+#endif // BINOMIALTREEENGINE_H
