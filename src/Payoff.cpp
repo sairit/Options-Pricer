@@ -1,6 +1,5 @@
 #include "Payoff.h"
 #include <iostream>
-#include <algorithm>
 
 // Payoff (base class) methods implementation
 Payoff::~Payoff(){}
