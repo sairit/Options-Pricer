@@ -16,7 +16,7 @@ int main() {
     double value = engine.price(option); 
 
     // Step 5: Print result to console
-    std::cout << "Option value: $" << value << std::endl; 
+    std::cout << "Calculated option value: $" << value << std::endl; 
 
     // Step 6: (Optional) run multiple scenarios
 
