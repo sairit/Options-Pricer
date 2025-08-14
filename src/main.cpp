@@ -1,4 +1,4 @@
-#include "BinomialTreeEngine.h"
+#include "../include/BinomialTreeEngine.h"
 #include <iostream>
 
 int main() {

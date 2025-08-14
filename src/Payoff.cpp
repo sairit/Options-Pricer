@@ -1,4 +1,4 @@
-#include "Payoff.h"
+#include "../include/Payoff.h"
 #include <iostream>
 
 // Payoff (base class) methods implementation
