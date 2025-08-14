@@ -7,7 +7,7 @@ int main() {
     auto payoff = std::make_shared<PutPayoff>(100.0); 
 
     // Step 2: Create option with maturity and payoff
-    Option option = Option(100.0, payoff);
+    Option option = Option(1, payoff);
 
     // Step 3: Create binomial tree engine with spot, rate, volatility, steps
     BinomialTreeEngine engine = BinomialTreeEngine(100.0, 0.05, 0.2, 1000);
