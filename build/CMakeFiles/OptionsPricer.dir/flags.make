@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/include
 
-CXX_FLAGSarm64 = -std=c++14 -arch arm64 -Wall -Wextra -pedantic
+CXX_FLAGSarm64 = -g -std=c++14 -arch arm64 -Wall -Wextra -pedantic
 
-CXX_FLAGS = -std=c++14 -arch arm64 -Wall -Wextra -pedantic
+CXX_FLAGS = -g -std=c++14 -arch arm64 -Wall -Wextra -pedantic
 

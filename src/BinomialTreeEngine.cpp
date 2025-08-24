@@ -1,6 +1,5 @@
 #include "../include/BinomialTreeEngine.h"
 #include <iostream>
-#include <cmath>
 
 BinomialTreeEngine::BinomialTreeEngine(double spot, double rate, double volatility, int steps) : spot(spot), rate(rate), volatility(volatility), steps(steps) {
     std::cout << "Binomial Tree Engine created with: spot =  " << spot << ", rate = " << rate << ", volatility = " << volatility << ", steps = " << steps << std::endl;

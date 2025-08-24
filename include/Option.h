@@ -1,8 +1,9 @@
+#ifndef OPTION_H
+#define OPTION_H
+
 #include <memory>
 #include "Payoff.h"
 
-#ifndef OPTION_H
-#define OPTION_H
 
 // General class: Option
 class Option {

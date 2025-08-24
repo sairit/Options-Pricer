@@ -1,7 +1,8 @@
-#include "Option.h"
-
 #ifndef BINOMIALTREEENGINE_H
 #define BINOMIALTREEENGINE_H
+
+#include "Option.h"
+#include <cmath>
 
 class BinomialTreeEngine {
     private:

@@ -10,6 +10,8 @@ class Payoff {
         // Virtual function to evaluate the payoff at a given spot price
         virtual double evaluate(double spotPrice) const = 0; 
 
+        virtual double get_strike() const = 0;
+
 };
 
 // Derived class: CallPayoff
@@ -21,6 +23,8 @@ class CallPayoff : public Payoff{
         // Constructor: takes in strike price
         explicit CallPayoff(double strikePrice);
         
+        double get_strike() const override; 
+
         // Override evaluate() to compute max(spot - strike, 0)
         double evaluate(double spotPrice) const override; 
 };
@@ -34,6 +38,8 @@ class PutPayoff : public Payoff{
         // Constructor: takes in strike price
         explicit PutPayoff(double strikePrice);
         
+        double get_strike() const override; 
+
         // Override evaluate() to compute max(strike - spot, 0)
         double evaluate(double spotPrice) const override; 
 };
