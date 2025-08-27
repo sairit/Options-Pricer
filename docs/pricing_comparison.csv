@@ -1,0 +1,21 @@
+Spot,Strike,Rate,Volatility,Maturity,Type,Model,Price,Runtime_ms
+100,100,0.05,0.2,1,Put,Black-Scholes,5.57353,0.006542
+100,100,0.05,0.2,1,Put,Binomial Tree,6.0896,12.0312
+100,100,0.05,0.2,1,Call,Black-Scholes,10.4506,0.005583
+100,100,0.05,0.2,1,Call,Binomial Tree,10.4486,14.7885
+120,100,0.05,0.2,1,Put,Black-Scholes,1.29199,0.003042
+120,100,0.05,0.2,1,Put,Binomial Tree,1.36784,10.8767
+80,100,0.05,0.2,1,Call,Black-Scholes,1.85942,0.025292
+80,100,0.05,0.2,1,Call,Binomial Tree,1.85964,10.8776
+100,100,0.05,0.4,1,Put,Black-Scholes,13.1459,0.002875
+100,100,0.05,0.4,1,Put,Binomial Tree,13.6656,9.80829
+100,100,0.05,0.4,1,Call,Black-Scholes,18.023,0.002958
+100,100,0.05,0.4,1,Call,Binomial Tree,18.0191,8.48521
+100,100,0.01,0.2,2,Put,Black-Scholes,10.1725,0.002375
+100,100,0.01,0.2,2,Put,Binomial Tree,10.3427,7.8615
+100,100,0.01,0.2,2,Call,Black-Scholes,12.1527,0.002542
+100,100,0.01,0.2,2,Call,Binomial Tree,12.1499,7.16667
+100,90,0.05,0.2,0.5,Put,Black-Scholes,1.27641,0.002166
+100,90,0.05,0.2,0.5,Put,Binomial Tree,1.32416,6.91996
+100,110,0.05,0.2,0.5,Call,Black-Scholes,2.90647,0.002333
+100,110,0.05,0.2,0.5,Call,Binomial Tree,2.90718,6.43946

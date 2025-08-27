@@ -72,38 +72,52 @@ include CMakeFiles/OptionsPricerTests.dir/flags.make
 CMakeFiles/OptionsPricerTests.dir/codegen:
 .PHONY : CMakeFiles/OptionsPricerTests.dir/codegen
 
-CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o: CMakeFiles/OptionsPricerTests.dir/flags.make
-CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/option_tests.cpp
-CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o: CMakeFiles/OptionsPricerTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o -MF CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o.d -o CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o -c /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/option_tests.cpp
+CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o: CMakeFiles/OptionsPricerTests.dir/flags.make
+CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/tests.cpp
+CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o: CMakeFiles/OptionsPricerTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o -MF CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o.d -o CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o -c /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/tests.cpp
 
-CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/option_tests.cpp > CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.i
+CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/tests.cpp > CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.i
 
-CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/option_tests.cpp -o CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.s
+CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/test/tests.cpp -o CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.s
 
-CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o: CMakeFiles/OptionsPricerTests.dir/flags.make
-CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp
-CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o: CMakeFiles/OptionsPricerTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o -MF CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o.d -o CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o -c /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp
+CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o: CMakeFiles/OptionsPricerTests.dir/flags.make
+CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BinomialTreeEngine.cpp
+CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o: CMakeFiles/OptionsPricerTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o -MF CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o.d -o CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o -c /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BinomialTreeEngine.cpp
 
-CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp > CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.i
+CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BinomialTreeEngine.cpp > CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.i
 
-CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp -o CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.s
+CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BinomialTreeEngine.cpp -o CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.s
+
+CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o: CMakeFiles/OptionsPricerTests.dir/flags.make
+CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BlackScholesEngine.cpp
+CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o: CMakeFiles/OptionsPricerTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o -MF CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o.d -o CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o -c /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BlackScholesEngine.cpp
+
+CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BlackScholesEngine.cpp > CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.i
+
+CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/BlackScholesEngine.cpp -o CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.s
 
 CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o: CMakeFiles/OptionsPricerTests.dir/flags.make
 CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Option.cpp
 CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o: CMakeFiles/OptionsPricerTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o -MF CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o.d -o CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o -c /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Option.cpp
 
 CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.i: cmake_force
@@ -114,21 +128,39 @@ CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Option.cpp -o CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.s
 
+CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o: CMakeFiles/OptionsPricerTests.dir/flags.make
+CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp
+CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o: CMakeFiles/OptionsPricerTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o -MF CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o.d -o CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o -c /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp
+
+CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp > CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.i
+
+CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/src/Payoff.cpp -o CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.s
+
 # Object files for target OptionsPricerTests
 OptionsPricerTests_OBJECTS = \
-"CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o" \
-"CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o" \
-"CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o"
+"CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o" \
+"CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o" \
+"CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o" \
+"CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o" \
+"CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o"
 
 # External object files for target OptionsPricerTests
 OptionsPricerTests_EXTERNAL_OBJECTS =
 
-OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o
-OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o
+OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o
+OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o
+OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o
 OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/src/Option.cpp.o
+OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/src/Payoff.cpp.o
 OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/build.make
 OptionsPricerTests: CMakeFiles/OptionsPricerTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable OptionsPricerTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable OptionsPricerTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OptionsPricerTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

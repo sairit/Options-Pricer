@@ -1,0 +1,43 @@
+Start testing: Aug 25 22:17 EDT
+----------------------------------------------------------
+1/1 Testing: OptionsPricerTests
+1/1 Test: OptionsPricerTests
+Command: "/Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build/OptionsPricerTests"
+Directory: /Users/saiyadavalli/Documents/Work/Code/OptionsPricer/build
+"OptionsPricerTests" start time: Aug 25 22:17 EDT
+Output:
+----------------------------------------------------------
+Call payoff created with strike price: $100
+CallPayoff tests passed.
+Put payoff created with strike price: $100
+PutPayoff tests passed.
+Call payoff created with strike price: $100
+Option created with time to expiration: 1 years
+Put payoff created with strike price: $100
+Option created with time to expiration: 1 years
+BlackScholes engine created with: spot =  100, rate = 0.05, volatility = 0.2
+Black-Scholes call price: 10.4506 (✓)
+Black-Scholes put price: 5.57353 (✓)
+Call payoff created with strike price: $100
+Option created with time to expiration: 0 years
+BlackScholes engine created with: spot =  120, rate = 0.05, volatility = 0.2
+Put payoff created with strike price: $100
+Option created with time to expiration: 1 years
+BlackScholes engine created with: spot =  100, rate = 0.05, volatility = 0
+Special case tests passed.
+Call payoff created with strike price: $100
+Option created with time to expiration: 1 years
+BlackScholes engine created with: spot =  100, rate = 0.05, volatility = 0.2
+Binomial Tree Engine created with: spot =  100, rate = 0.05, volatility = 0.2, steps = 5000
+Binomial vs Black-Scholes convergence test passed.
+BS price = 10.4506, Binomial price = 10.4502
+All tests passed!
+<end of output>
+Test time =   0.34 sec
+----------------------------------------------------------
+Test Passed.
+"OptionsPricerTests" end time: Aug 25 22:17 EDT
+"OptionsPricerTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 25 22:17 EDT

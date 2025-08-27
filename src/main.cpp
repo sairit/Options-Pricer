@@ -1,24 +1,75 @@
 #include "../include/BinomialTreeEngine.h"
+#include "../include/BlackScholesEngine.h"
 #include <iostream>
+#include <fstream>
+#include <memory>
+#include <chrono>
+#include <vector>
+
+struct TestCase {
+    double spot, strike, rate, vol, maturity;
+    bool isCall;
+};
 
 int main() {
-    // Step 1: Create payoff (call or put)
-    // e.g., payoff = make_shared<PutPayoff>(strike);
-    auto payoff = std::make_shared<PutPayoff>(100.0); 
+    // ~10 varied test cases
+    std::vector<TestCase> tests = {
+        {100, 100, 0.05, 0.2, 1.0, false}, // ATM Put
+        {100, 100, 0.05, 0.2, 1.0, true},  // ATM Call
+        {120, 100, 0.05, 0.2, 1.0, false}, // ITM Put
+        {80, 100, 0.05, 0.2, 1.0, true},   // ITM Call
+        {100, 100, 0.05, 0.4, 1.0, false}, // High vol Put
+        {100, 100, 0.05, 0.4, 1.0, true},  // High vol Call
+        {100, 100, 0.01, 0.2, 2.0, false}, // Low rate, long T Put
+        {100, 100, 0.01, 0.2, 2.0, true},  // Low rate, long T Call
+        {100, 90,  0.05, 0.2, 0.5, false}, // Short T Put
+        {100, 110, 0.05, 0.2, 0.5, true}   // Short T Call
+    };
 
-    // Step 2: Create option with maturity and payoff
-    Option option = Option(1, payoff);
+    std::ofstream csv("../docs/pricing_comparison.csv");
+    csv << "Spot,Strike,Rate,Volatility,Maturity,Type,Model,Price,Runtime_ms\n";
 
-    // Step 3: Create binomial tree engine with spot, rate, volatility, steps
-    BinomialTreeEngine engine = BinomialTreeEngine(100.0, 0.05, 0.2, 1000);
+    int steps = 1000; // Binomial Tree resolution
 
-    // Step 4: Call engine.price(option) to get the value
-    double value = engine.price(option); 
+    for (const auto& tc : tests) {
+        std::shared_ptr<Payoff> payoff = tc.isCall
+            ? std::static_pointer_cast<Payoff>(std::make_shared<CallPayoff>(tc.strike))
+            : std::static_pointer_cast<Payoff>(std::make_shared<PutPayoff>(tc.strike));
+        Option option(tc.maturity, payoff);
 
-    // Step 5: Print result to console
-    std::cout << "Calculated option value: $" << value << std::endl; 
+        // Black–Scholes
+        auto t1 = std::chrono::high_resolution_clock::now();
+        BlackScholesEngine bs(tc.spot, tc.rate, tc.vol);
+        double euro = tc.isCall ? bs.call_price(option) : bs.put_price(option);
+        auto t2 = std::chrono::high_resolution_clock::now();
 
-    // Step 6: (Optional) run multiple scenarios
+        // Binomial Tree
+        auto t3 = std::chrono::high_resolution_clock::now();
+        BinomialTreeEngine bt(tc.spot, tc.rate, tc.vol, steps);
+        double amer = bt.price(option);
+        auto t4 = std::chrono::high_resolution_clock::now();
 
+        double timeBS = std::chrono::duration<double, std::milli>(t2 - t1).count();
+        double timeBT = std::chrono::duration<double, std::milli>(t4 - t3).count();
+
+        std::string type = tc.isCall ? "Call" : "Put";
+
+        // Console
+        std::cout << "\nCase: Spot=" << tc.spot << " Strike=" << tc.strike
+                  << " Rate=" << tc.rate << " Vol=" << tc.vol
+                  << " T=" << tc.maturity << " (" << type << ")\n"
+                  << "   Black–Scholes (Euro) : " << euro << " | " << timeBS << " ms\n"
+                  << "   Binomial Tree (Amer) : " << amer << " | " << timeBT << " ms\n"
+                  << "   Premium Difference   : " << (amer - euro) << "\n";
+
+        // CSV
+        csv << tc.spot << "," << tc.strike << "," << tc.rate << "," << tc.vol << "," << tc.maturity << "," << type
+            << ",Black-Scholes," << euro << "," << timeBS << "\n";
+        csv << tc.spot << "," << tc.strike << "," << tc.rate << "," << tc.vol << "," << tc.maturity << "," << type
+            << ",Binomial Tree," << amer << "," << timeBT << "\n";
+    }
+
+    csv.close();
+    std::cout << "\nResults written to ../docs/pricing_comparison.csv ✅\n";
     return 0;
 }

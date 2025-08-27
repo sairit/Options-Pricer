@@ -158,6 +158,7 @@ src/BinomialTreeEngine.o: src/BinomialTreeEngine.cpp.o
 # target to build an object file
 src/BinomialTreeEngine.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricer.dir/build.make CMakeFiles/OptionsPricer.dir/src/BinomialTreeEngine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.o
 .PHONY : src/BinomialTreeEngine.cpp.o
 
 src/BinomialTreeEngine.i: src/BinomialTreeEngine.cpp.i
@@ -166,6 +167,7 @@ src/BinomialTreeEngine.i: src/BinomialTreeEngine.cpp.i
 # target to preprocess a source file
 src/BinomialTreeEngine.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricer.dir/build.make CMakeFiles/OptionsPricer.dir/src/BinomialTreeEngine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.i
 .PHONY : src/BinomialTreeEngine.cpp.i
 
 src/BinomialTreeEngine.s: src/BinomialTreeEngine.cpp.s
@@ -174,7 +176,35 @@ src/BinomialTreeEngine.s: src/BinomialTreeEngine.cpp.s
 # target to generate assembly for a file
 src/BinomialTreeEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricer.dir/build.make CMakeFiles/OptionsPricer.dir/src/BinomialTreeEngine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/src/BinomialTreeEngine.cpp.s
 .PHONY : src/BinomialTreeEngine.cpp.s
+
+src/BlackScholesEngine.o: src/BlackScholesEngine.cpp.o
+.PHONY : src/BlackScholesEngine.o
+
+# target to build an object file
+src/BlackScholesEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricer.dir/build.make CMakeFiles/OptionsPricer.dir/src/BlackScholesEngine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.o
+.PHONY : src/BlackScholesEngine.cpp.o
+
+src/BlackScholesEngine.i: src/BlackScholesEngine.cpp.i
+.PHONY : src/BlackScholesEngine.i
+
+# target to preprocess a source file
+src/BlackScholesEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricer.dir/build.make CMakeFiles/OptionsPricer.dir/src/BlackScholesEngine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.i
+.PHONY : src/BlackScholesEngine.cpp.i
+
+src/BlackScholesEngine.s: src/BlackScholesEngine.cpp.s
+.PHONY : src/BlackScholesEngine.s
+
+# target to generate assembly for a file
+src/BlackScholesEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricer.dir/build.make CMakeFiles/OptionsPricer.dir/src/BlackScholesEngine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/src/BlackScholesEngine.cpp.s
+.PHONY : src/BlackScholesEngine.cpp.s
 
 src/Option.o: src/Option.cpp.o
 .PHONY : src/Option.o
@@ -254,29 +284,29 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricer.dir/build.make CMakeFiles/OptionsPricer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-test/option_tests.o: test/option_tests.cpp.o
-.PHONY : test/option_tests.o
+test/tests.o: test/tests.cpp.o
+.PHONY : test/tests.o
 
 # target to build an object file
-test/option_tests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.o
-.PHONY : test/option_tests.cpp.o
+test/tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.o
+.PHONY : test/tests.cpp.o
 
-test/option_tests.i: test/option_tests.cpp.i
-.PHONY : test/option_tests.i
+test/tests.i: test/tests.cpp.i
+.PHONY : test/tests.i
 
 # target to preprocess a source file
-test/option_tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.i
-.PHONY : test/option_tests.cpp.i
+test/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.i
+.PHONY : test/tests.cpp.i
 
-test/option_tests.s: test/option_tests.cpp.s
-.PHONY : test/option_tests.s
+test/tests.s: test/tests.cpp.s
+.PHONY : test/tests.s
 
 # target to generate assembly for a file
-test/option_tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/test/option_tests.cpp.s
-.PHONY : test/option_tests.cpp.s
+test/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OptionsPricerTests.dir/build.make CMakeFiles/OptionsPricerTests.dir/test/tests.cpp.s
+.PHONY : test/tests.cpp.s
 
 # Help Target
 help:
@@ -292,6 +322,9 @@ help:
 	@echo "... src/BinomialTreeEngine.o"
 	@echo "... src/BinomialTreeEngine.i"
 	@echo "... src/BinomialTreeEngine.s"
+	@echo "... src/BlackScholesEngine.o"
+	@echo "... src/BlackScholesEngine.i"
+	@echo "... src/BlackScholesEngine.s"
 	@echo "... src/Option.o"
 	@echo "... src/Option.i"
 	@echo "... src/Option.s"
@@ -301,9 +334,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... test/option_tests.o"
-	@echo "... test/option_tests.i"
-	@echo "... test/option_tests.s"
+	@echo "... test/tests.o"
+	@echo "... test/tests.i"
+	@echo "... test/tests.s"
 .PHONY : help
 
 

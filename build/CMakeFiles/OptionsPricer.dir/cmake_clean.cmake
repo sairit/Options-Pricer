@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OptionsPricer.dir/src/BinomialTreeEngine.cpp.o"
   "CMakeFiles/OptionsPricer.dir/src/BinomialTreeEngine.cpp.o.d"
+  "CMakeFiles/OptionsPricer.dir/src/BlackScholesEngine.cpp.o"
+  "CMakeFiles/OptionsPricer.dir/src/BlackScholesEngine.cpp.o.d"
   "CMakeFiles/OptionsPricer.dir/src/Option.cpp.o"
   "CMakeFiles/OptionsPricer.dir/src/Option.cpp.o.d"
   "CMakeFiles/OptionsPricer.dir/src/Payoff.cpp.o"

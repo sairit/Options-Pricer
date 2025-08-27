@@ -18,7 +18,7 @@ double BlackScholesEngine::call_price(const Option& option) const {
     double strike = (option.get_payoff())->get_strike();  
 
     // Special Case 1: If call is expired.
-    if (T == 0) {
+    if (T <= TINY_EPSILON) {
         return std::max(spot - strike, 0.0);
     }
 
@@ -36,13 +36,13 @@ double BlackScholesEngine::call_price(const Option& option) const {
     return call;
 }
 
-// Calculates European call price
+// Calculates European put price
 double BlackScholesEngine::put_price(const Option& option) const {
     double T = option.get_maturity(); 
     double strike = (option.get_payoff())->get_strike(); 
     
     // Special Case 1: If put is expired.
-    if (T == 0) {
+    if (T <= TINY_EPSILON) {
         return std::max(strike - spot, 0.0);
     }
 
